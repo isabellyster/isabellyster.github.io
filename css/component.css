@@ -1,0 +1,439 @@
+@font-face {
+	font-family: 'bpmenu';
+	src:url('../fonts/bpmenu/bpmenu.eot');
+	src:url('../fonts/bpmenu/bpmenu.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/bpmenu/bpmenu.woff') format('woff'),
+		url('../fonts/bpmenu/bpmenu.ttf') format('truetype'),
+		url('../fonts/bpmenu/bpmenu.svg#bpmenu') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.main {
+    background: #3f3f3f;
+}
+
+ .container {
+     background: #3f3f3f;
+ }  
+
+/* Main menu wrapper */
+.cbp-hsmenu-wrapper {
+	position: relative;
+}
+
+/* Common style for all lists */
+.cbp-hsmenu-wrapper ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+}
+
+/* 100% width bar for menu */
+.cbp-hsinner {
+	background: #1f1f1f;
+	position: relative;
+	z-index: 100;
+}
+
+/* Main menu style */
+.cbp-hsmenu-wrapper .cbp-hsmenu {
+	width: 90%;
+	max-width: 69em;
+	margin: 0 auto;
+	padding: 0 1.875em;
+}
+
+.cbp-hsmenu > li {
+	margin-left: 4em;
+	display: inline-block;
+}
+
+.cbp-hsmenu > li:first-child {
+	margin-left: 0;
+}
+
+/* Main menu link style */
+.cbp-hsmenu > li > a {
+	color: #705050;
+	font-size: 1.2em;
+	line-height: 3em;
+	display: inline-block;
+	position: relative;
+	z-index: 10000;
+	outline: none;
+}
+
+.no-touch .cbp-hsmenu > li > a:hover,
+.no-touch .cbp-hsmenu > li > a:focus,
+.cbp-hsmenu > li.cbp-hsitem-open > a {
+	color: #dca3a3;
+}
+
+/* Add an arrow to the main menu link if it has a submenu (not the only child) */
+.cbp-hsmenu > li > a:not(:only-child):before {
+	display: inline-block;
+	font-family: 'bpmenu';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	content: "\f107";
+	font-size: 80%;
+	margin-right: 0.3em;
+	opacity: 0.4;
+	vertical-align: middle;
+}
+
+.cbp-hsmenu > li.cbp-hsitem-open > a:not(:only-child):before {
+	content: "\f106";
+}
+
+/* Add a triangle to currently open menu item link */
+.cbp-hsmenu > li.cbp-hsitem-open > a:after {
+	top: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: transparent;
+	border-top-color: #1f1f1f;
+	border-width: 10px;
+	left: 50%;
+	margin-left: -10px;
+}
+
+/* Submenu style */
+.cbp-hssubmenu {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 100%;
+	z-index: 0;
+	text-align: center; /* for aligning the sub items */
+	visibility: hidden;
+}
+
+.cbp-hssubmenu:before, 
+.cbp-hssubmenu:after { 
+	content: " "; 
+	display: table; 
+}
+.cbp-hssubmenu:after { 
+	clear: both; 
+}
+
+/* Let's allow 6 item in a row */
+.cbp-hssubmenu > li {
+	width: 16.2%;
+	display: inline-block;
+	vertical-align: top;
+
+	opacity: 0;
+	-webkit-transition: opacity 0.1s 0s;
+	-moz-transition: opacity 0.1s 0s;
+	transition: opacity 0.1s 0s;
+}
+
+/* First 6 items don't have upper box shadow */
+.cbp-hssubmenu > li:nth-child(-n+6) {
+
+} 
+
+/* Every 7th item does not have a left box shadow */
+.cbp-hssubmenu > li:nth-child(6n+1) {
+
+}
+
+/* The first one does not have any box shadow */
+.cbp-hssubmenu > li:first-child {
+	box-shadow: none;
+}
+
+.cbp-hssubmenu > li a {
+	display: block;
+	text-align: center;
+	color: #a2a2a2;
+	outline: none;
+	padding: 2em 1em 1em 1em;
+}
+
+.no-touch .cbp-hssubmenu > li a:hover,
+.no-touch .cbp-hssubmenu > li a:focus {
+	color: #888;
+}
+
+.cbp-hssubmenu > li a img {
+	border: none;
+	outline: none;
+	display: inline-block;
+	margin: 0;
+	max-width: 100%;
+	-webkit-transition: opacity 0.2s;
+	-moz-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+}
+
+.no-touch .cbp-hssubmenu > li a:hover img {
+	opacity: 0.5;
+}
+
+.cbp-hssubmenu > li a span {
+	display: block;
+	min-height: 3em;
+	margin-top: 0.4em;
+}
+
+.cbp-hsmenu > li.cbp-hsitem-open .cbp-hssubmenu {
+	z-index: 1000;
+	visibility: visible;
+}
+
+.cbp-hsmenu > li.cbp-hsitem-open .cbp-hssubmenu > li {
+	opacity: 1;
+	-webkit-transition: opacity 0.5s 0.1s;
+	-moz-transition: opacity 0.5s 0.1s;
+	transition: opacity 0.5s 0.1s;
+}
+
+/* Helper div for animating the background */
+.cbp-hsmenubg {
+	background: #1f1f1f;
+	position: absolute;
+	width: 100%;
+	top: 100%;
+	left: 0;
+	z-index: 0;
+	height: 0px;
+}
+
+.no-touch .cbp-hsmenubg {
+	-webkit-transition: height 0.3s;
+	-moz-transition: height 0.3s;
+	transition: height 0.3s;
+}
+
+@media screen and (max-width: 65em){
+	.cbp-hsmenu-wrapper {
+		font-size: 80%;
+	}
+}
+
+@media screen and (max-width: 51.4375em){
+	.cbp-hsmenu-wrapper {
+		font-size: 100%;
+	}
+
+	.cbp-hsmenu-wrapper .cbp-hsmenu {
+		padding: 0;
+		max-width: none;
+		width: 100%;
+	}
+
+	.cbp-hsmenu > li {
+		border-top: none; 
+		text-align: center;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.cbp-hsmenu > li:first-child {
+		border-top: none;
+	}
+
+	.cbp-hsmenu > li > a {
+		display: block;
+	}
+
+	.cbp-hsmenu > li > a:not(:only-child):before {
+		line-height: 1.8;
+		right: 0;
+		position: absolute;
+		font-size: 200%;
+	}
+
+	.cbp-hsmenubg {
+		display: none;
+	}
+
+	.cbp-hssubmenu {
+
+		background: #1f1f1f;
+		position: relative;
+		overflow: hidden;
+		height: 0;
+	}
+
+	.cbp-hsmenu > li.cbp-hsitem-open .cbp-hssubmenu {
+		height: auto;
+	}
+
+	/* Let's only allow 3 item in a row now */
+	.cbp-hssubmenu > li {
+		width: 30%;
+	}
+
+
+}
+
+@media screen and (max-width: 25em){
+	/* Let's only allow 1 item in a row now */
+	.cbp-hssubmenu > li {
+		width: 100%;
+		display: block;
+	}
+
+	.cbp-hsmenu-wrapper .cbp-hssubmenu > li {
+		box-shadow: 0 1px #cecece;
+		text-align: left;
+	}
+
+	.cbp-hssubmenu > li a {
+		text-align: left;
+		line-height: 50px;
+		padding: 0.4em 1em;
+	}
+
+	.cbp-hssubmenu > li a img {
+		float: left;
+		max-height: 50px;
+	}
+
+	.cbp-hssubmenu > li a span {
+		min-height: 0;
+		margin: 0;
+	}
+}
+
+.cbp-mc-form {
+
+	position: relative;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.cbp-mc-form:before, 
+.cbp-mc-form:after { 
+	content: " "; display: table; 
+}
+
+.cbp-mc-form:after {
+     z-index:-100;
+	clear: both; 
+}
+
+.cbp-mc-column {
+	width: 60%;
+	padding: 5px 30px;
+	float: right;
+}
+
+.cbp-mc-form label {
+	display: block;
+	padding: 40px 5px 5px 2px;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+.cbp-mc-form input,
+.cbp-mc-form textarea,
+.cbp-mc-form select {
+     background:#3f3f3f;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	line-height: 1.5;
+	font-size: 1.4em;
+	padding: 5px 10px;
+	color: #506070;
+	display: block;
+	width: 100%;
+    border-style:solid;
+    border-width:3px;
+}
+
+.cbp-mc-form input,
+.cbp-mc-form textarea {
+	border: 3px solid #1f1f1f;
+}
+
+.cbp-mc-form textarea {
+	min-height: 200px;
+}
+
+.cbp-mc-form input:focus,
+.cbp-mc-form textarea:focus,
+.cbp-mc-form label:active + input,
+.cbp-mc-form label:active + textarea {
+	outline: none;
+	border: 3px solid #dca3a3;
+}
+
+.cbp-mc-form select:focus {
+	outline: none;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #506070;
+    font-style: italic;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #506070;
+    font-style: italic;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #506070;
+    font-style: italic;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #506070;
+    font-style: italic;
+}
+
+.cbp-mc-submit-wrap {
+	text-align: center;
+	padding: 30px;
+	clear: both;
+        float: right;
+}
+
+.cbp-mc-form input.cbp-mc-submit {
+	background: #c3bf9f;
+	border: none;
+	color: #1f1f1f;
+	width: auto;
+	cursor: pointer;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 15px 30px;
+	font-size: 1.1em;
+	border-radius: 2px;
+	letter-spacing: 1px;
+}
+
+.cbp-mc-form input.cbp-mc-submit:hover {
+	background:  #60b48a;
+}
+
+@media screen and (max-width: 70em) {
+	.cbp-mc-column {
+		width: 50%;
+	}
+	.cbp-mc-column:nth-child(3) {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 48em) {
+	.cbp-mc-column {
+		width: 100%;
+		padding: 10px;
+	}
+}
