@@ -2,5 +2,5 @@
 source "https://rubygems.org"
 
 # gem "rails"
-gem 'github-pages', group: :jekyll_plugins
+gem 'github-pages', '104', group: :jekyll_plugins
 #gem "jekyll"
