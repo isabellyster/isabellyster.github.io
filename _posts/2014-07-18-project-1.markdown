@@ -1,5 +1,5 @@
 ---
-title: Puppet show
+title: Puppet dance
 subtitle: Love
 layout: default
 modal-id: 1
