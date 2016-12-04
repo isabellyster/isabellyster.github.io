@@ -5,7 +5,7 @@ Agency theme based on [Agency bootstrap theme ](http://startbootstrap.com/templa
 
 # How to use
 
-###Portfolio 
+###Portfolio
 
 Portfolio projects are in '/_posts'
 
@@ -21,6 +21,7 @@ Team members and info are in '_config.yml'
 
 Images are in '/img/team/'
 
+Font for page title is in agency.css line 180.
 
 # Demo
 
