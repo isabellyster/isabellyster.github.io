@@ -1,0 +1,15 @@
+---
+title: Sky Opera
+subtitle: Mobile
+layout: default
+modal-id: 1
+date: 2014-07-16
+img: skyopera.jpg
+thumbnail: skyopera.jpg
+alt: image-alt
+project-date: April 2014
+client: Start Bootstrap
+category: Web Development
+description: A puppetry performance inspired by the movement of wind
+
+---

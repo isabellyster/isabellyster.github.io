@@ -3,7 +3,7 @@ title: Puppet show
 subtitle: Love
 layout: default
 modal-id: 1
-date: 2014-07-18
+date: 2014-07-17
 img: puppetshow.jpg
 thumbnail: puppetshow.jpg
 alt: image-alt
