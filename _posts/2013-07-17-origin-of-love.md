@@ -8,8 +8,8 @@ img: sheep.jpg
 thumbnail: sheep.jpg
 alt: image-alt
 project-date: April 2014
-client: Start Bootstrap
-category: Web Development
+location: Start Bootstrap
+genre:  Web Development
 description: Sculptures of sheep
 
 
