@@ -10,6 +10,6 @@ alt: image-alt
 project-date: April 2014
 Client: Start Bootstrap
 Service:  Web Development
-description: A puppet show made as a commission for a wedding. The story is based on an extract from Plato's writings on "The Origin of Love".
+description: A puppet show made as a commission for a wedding. The story is based on an extract from Plato's writings on "The Origin of Love"
 
 ---
