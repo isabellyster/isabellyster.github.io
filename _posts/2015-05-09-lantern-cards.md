@@ -2,7 +2,7 @@
 title: Lantern cards
 subtitle: Illustration
 layout: default
-modal-id: 5
+modal-id: 7
 date: 2014-07-18
 img: lantern-cards.jpg
 thumbnail: lantern-cards.jpg

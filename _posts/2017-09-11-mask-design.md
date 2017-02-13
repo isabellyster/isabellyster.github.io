@@ -1,16 +1,16 @@
 ---
 title: Mask Design
-subtitle: Table-top Puppet
+subtitle: Mask Design and Construction
 layout: default
-modal-id: 7
+modal-id: 8
 date: 2014-07-18
-img: old-man.jpg
-thumbnail: old-man.jpg
+img: mask-page.jpg
+thumbnail: mask.jpg
 alt: image-alt
 project-date: April 2014
 Client: Start Bootstrap
 Service:  Web Development
-description: A Table-top puppet designed for versatile one man storytelling
+description: Masks design to express abstract representation of inner ego and self. Used to accompany costume design for a fashion show.
 
 
 ---
