@@ -1,8 +1,8 @@
 ---
-title: Old Man
+title: Sketchbook
 subtitle: Table-top Puppet
 layout: default
-modal-id: 7
+modal-id: 1
 date: 2014-07-18
 img: old-man.jpg
 thumbnail: old-man.jpg
