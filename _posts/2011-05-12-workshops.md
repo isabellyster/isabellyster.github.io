@@ -3,7 +3,7 @@ title: Workshops
 subtitle: Creative Facilitation
 layout: default
 modal-id: 2
-date: 2014-07-18
+date: 2011-05-12
 img: workshops-page.jpg
 thumbnail: workshops.jpg
 alt: image-alt

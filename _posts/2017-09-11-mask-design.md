@@ -3,7 +3,7 @@ title: Mask Design
 subtitle: Mask Design and Construction
 layout: default
 modal-id: 9
-date: 2014-07-18
+date: 2017-09-11
 img: mask-page.jpg
 thumbnail: mask.jpg
 alt: image-alt

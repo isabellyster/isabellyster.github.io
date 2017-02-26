@@ -3,7 +3,7 @@ title: Moving Theatre Experience
 subtitle: Puppetry and Documentary Film
 layout: default
 modal-id: 10
-date: 2014-07-18
+date: 2018-09-11
 img: moving-theatre-experience-page.jpg
 thumbnail: moving-theatre-experience.jpg
 alt: image-alt
