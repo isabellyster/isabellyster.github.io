@@ -10,7 +10,7 @@ alt: image-alt
 project-date: July 2012
 Client: Start Bootstrap
 Service:  Web Development
-description: Masks design to express abstract representation of inner ego and self. Used to accompany costume design for a fashion show.
+description: Masks designed to express an abstract representation of inner ego and self. Used to accompany costume design for a fashion show in the Rag Factory, a collaboration with London School of Fashion
 
 
 ---
