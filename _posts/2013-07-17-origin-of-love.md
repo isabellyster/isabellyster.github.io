@@ -5,9 +5,9 @@ layout: default
 modal-id: 5
 date: 2013-07-17
 img: the-origin-of-love-page.jpg
-thumbnail: the-origin-of-love.jpg
+thumbnail: the-origin-of-love-thumb.jpg
 alt: image-alt
-project-date: April 2014
+project-date: May 2016
 Client: Start Bootstrap
 Service:  Web Development
 description: A puppet show made as a commission for a wedding. The story is based on an extract from Plato's writings on "The Origin of Love"
