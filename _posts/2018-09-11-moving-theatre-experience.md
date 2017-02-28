@@ -4,8 +4,8 @@ subtitle: Puppetry and Documentary Film
 layout: default
 modal-id: 10
 date: 2018-09-11
-img: moving-theatre-experience-page.jpg
-thumbnail: moving-theatre-experience.jpg
+img: moving-theatre-page.jpg
+thumbnail: moving-theatre-thumb.jpg
 alt: image-alt
 project-date: February 2016
 Client: Start Bootstrap
