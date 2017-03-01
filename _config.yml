@@ -3,9 +3,8 @@ baseurl:
 
 # Site settings
 title: Isabel Lyster
-email: isabel_lyster@hotmail.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-
+email: isabel.a.lyster@gmail.com
+description: Isabel Lyster is a performance maker, puppetry specialist and visual artist. She works in collaboration with theatre companies and a network of individual practitioners combining performance, puppetry and education.
 
 # Team names, titles and social links
 people:
@@ -47,10 +46,10 @@ social:
   - title: twitter
     url: http://twitter.com/jekyllrb
   - title: facebook
-    url:
+    url: http:/facebook.com/isabel.lyster
   - title: stack-overflow
     url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket 
+  - title: bitbucket
     url: http://bitbucket.org/jekyll
   - title: github
     url: http://github.com/jekyll
@@ -58,7 +57,7 @@ social:
 # Postal address (add as many lines as necessary)
 address:
   - line: Woodside Cottage
-  - line: Stroud, GL60PW
+  - line: Stroud, GL5 2UL
 
 # Build settings
 markdown: kramdown
