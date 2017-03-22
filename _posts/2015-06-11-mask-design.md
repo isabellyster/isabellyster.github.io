@@ -2,7 +2,7 @@
 title: Mask Design
 subtitle: Mask Design and Construction
 layout: default
-modal-id: 9
+modal-id: 12
 date: 2015-06-11
 img: mask-page.jpg
 thumbnail: mask-thumb.jpg
