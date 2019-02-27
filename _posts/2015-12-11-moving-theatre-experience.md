@@ -2,7 +2,7 @@
 title: Moving Theatre Experience
 subtitle: Puppetry & Documentary Film
 layout: default
-modal-id: 15
+modal-id: 20
 date: 2015-12-11
 img: moving-theatre-page.jpg
 thumbnail: moving-theatre-thumb.jpg

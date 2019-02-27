@@ -2,10 +2,10 @@
 title: Sketchbook
 subtitle: Everyday thoughts and doodles
 layout: default
-modal-id: 17
-date: 2014-08-11
-img: sketch-page-2.jpg
-thumbnail: sketch-thumb-2.jpg
+modal-id: 04
+date: 2014-09-11
+img: sketch-page-1.jpg
+thumbnail: sketch-thumb-1.jpg
 alt: image-alt
 project-date: Ongoing
 Client: Start Bootstrap

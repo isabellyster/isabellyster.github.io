@@ -2,7 +2,7 @@
 title: Stringnote Puppets
 subtitle: Puppet Making & Design
 layout: default
-modal-id: 12
+modal-id: 17
 date: 2015-09-11
 img: stringnote-page.jpg
 thumbnail: stringnote-thumb.jpg
